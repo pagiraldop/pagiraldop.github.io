@@ -7,6 +7,8 @@ navbar:
     href: index.html
   - text: "Trabajos"
     href: about.html
+  - text: "Densidades"
+    href: Densidades.html
 output:
   html_document:
     theme: flatly
