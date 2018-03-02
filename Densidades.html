@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Densidades</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -198,11 +198,46 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Densidades</h1>
 
 </div>
 
 
+<div id="densidad-1" class="section level1">
+<h1>Densidad 1</h1>
+<p>densidades de variables generadas de una distribucion normal</p>
+<p>Se generaron muestras de una normal con media 0 y desviacion estandar 1</p>
+<pre class="r"><code>var1 &lt;- rnorm(40,mean=0,sd=1)
+var2 &lt;- rnorm(40,mean=3,sd=1)
 
+
+plot(density(var1),xlim=c(min(var1),max(var2)),ylim=c(0,0.8),lty=2,lwd=2,col=&quot;darkblue&quot;,main=&quot;Funciones 
+de densidad&quot;)
+lines(density(var2),lwd=2,col=&quot;darkred&quot;)</code></pre>
+<p><img src="Densidades_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="densidad-2" class="section level1">
+<h1>Densidad 2</h1>
+<pre class="r"><code>datos&lt;- read.csv(&quot;Accidentalidad_nueva_3.csv&quot;)
+head(datos)</code></pre>
+<pre><code>##                         COMUNA TIPO.DE.ACCIDENTE   GRAVEDAD MES DIA.SEMANA
+## 1                        Belen    Caida ocupante     HERIDO  11  VIERNES  
+## 2 Corregimiento de Santa Elena            Choque SOLO DANOS   3  MIERCOLES
+## 3                     Manrique              Otro     HERIDO   8  MARTES   
+## 4                      Popular              Otro SOLO DANOS   9  JUEVES   
+## 5             Laureles Estadio            Choque     MUERTO  11  MARTES   
+## 6                La Candelaria            Choque SOLO DANOS   4  MIERCOLES
+##   NUMERO.ACCIDENTE
+## 1                6
+## 2                2
+## 3                4
+## 4                0
+## 5                0
+## 6              202</code></pre>
+<pre class="r"><code>accidentes&lt;-datos$NUMERO.ACCIDENTE
+plot(density(x=accidentes), main=&quot;Densidad de la frecuencia de accidentes en el ano 2016 en medellin&quot;, xlab=&quot;Accidentes&quot;, ylab=&quot;Densidad&quot;, lwd=4, col=&quot;blue&quot;)</code></pre>
+<p><img src="Densidades_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
 
 
 

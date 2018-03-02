@@ -1,0 +1,36 @@
+---
+title: "Densidades "
+---
+# Densidad 1
+densidades de variables generadas de una distribucion normal 
+
+Se generaron muestras de una normal con media 0 y desviacion estandar 1 
+
+
+```{r}
+var1 <- rnorm(40,mean=0,sd=1)
+var2 <- rnorm(40,mean=3,sd=1)
+
+
+plot(density(var1),xlim=c(min(var1),max(var2)),ylim=c(0,0.8),lty=2,lwd=2,col="darkblue",main="Funciones 
+de densidad")
+lines(density(var2),lwd=2,col="darkred")
+```
+
+
+#Densidad 2
+
+
+```{r}
+
+datos<- read.csv("Accidentalidad_nueva_3.csv")
+head(datos)
+
+
+```
+
+```{r}
+accidentes<-datos$NUMERO.ACCIDENTE
+plot(density(x=accidentes), main="Densidad de la frecuencia de accidentes en el ano 2016 en medellin", xlab="Accidentes", ylab="Densidad", lwd=4, col="blue")
+```
+
