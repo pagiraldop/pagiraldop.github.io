@@ -1,5 +1,8 @@
 ---
-title: "My Website"
+title: "Sobre mi !!"
 ---
 
-Hello, Website!
+
+Hola, soy Paula Andrea Giraldo Pedroza Estudiante de Estadistica en la Universidad Nacional De Colombia sede Medellin, cursando octavo semestre, tengo 20 anos y naci en Acacias-Meta. Disfruto de los pequenos detalles que marcan la diferencia,no me gusta el chocolate en ninguna presentacion.Amo compartir con mi familia, amigos y todos mis seres queridos.
+
+![](Orinoquia.jpg)

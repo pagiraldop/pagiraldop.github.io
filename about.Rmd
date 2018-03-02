@@ -4,4 +4,5 @@ title: "Trabajos "
 
 El siguiente es un poster donde se uso un analisis de regresion para optimizar la producción de bioetanol por fermentación de hidrolizados hemicelulósicos de residuos de palma africana usando una cepa *Scheffersomyces Stipitis* adaptada
 
+
 _poster: <a href="posterito.pdf#" class="download" title="Descarga el poster"> Descarga el poster  (Noviembre,2017) </a>
