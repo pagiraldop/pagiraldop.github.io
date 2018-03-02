@@ -212,7 +212,7 @@ var2 &lt;- rnorm(40,mean=3,sd=1)
 
 
 plot(density(var1),xlim=c(min(var1),max(var2)),ylim=c(0,0.8),lty=2,lwd=2,col=&quot;darkblue&quot;,main=&quot;Funciones 
-de densidad&quot;)
+de densidad&quot;, las= 1)
 lines(density(var2),lwd=2,col=&quot;darkred&quot;)</code></pre>
 <p><img src="Densidades_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
@@ -235,7 +235,7 @@ head(datos)</code></pre>
 ## 5                0
 ## 6              202</code></pre>
 <pre class="r"><code>accidentes&lt;-datos$NUMERO.ACCIDENTE
-plot(density(x=accidentes), main=&quot;Densidad de la frecuencia de accidentes en el ano 2016 en medellin&quot;, xlab=&quot;Accidentes&quot;, ylab=&quot;Densidad&quot;, lwd=4, col=&quot;blue&quot;)</code></pre>
+plot(density(x=accidentes), main=&quot;Densidad de la frecuencia de accidentes en el ano 2016 en medellin&quot;, xlab=&quot;Accidentes&quot;, ylab=&quot;Densidad&quot;, lwd=4, col=&quot;blue&quot;, las=1)</code></pre>
 <p><img src="Densidades_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 

@@ -13,7 +13,7 @@ var2 <- rnorm(40,mean=3,sd=1)
 
 
 plot(density(var1),xlim=c(min(var1),max(var2)),ylim=c(0,0.8),lty=2,lwd=2,col="darkblue",main="Funciones 
-de densidad")
+de densidad", las= 1)
 lines(density(var2),lwd=2,col="darkred")
 ```
 
@@ -31,6 +31,6 @@ head(datos)
 
 ```{r}
 accidentes<-datos$NUMERO.ACCIDENTE
-plot(density(x=accidentes), main="Densidad de la frecuencia de accidentes en el ano 2016 en medellin", xlab="Accidentes", ylab="Densidad", lwd=4, col="blue")
+plot(density(x=accidentes), main="Densidad de la frecuencia de accidentes en el ano 2016 en medellin", xlab="Accidentes", ylab="Densidad", lwd=4, col="blue", las=1)
 ```
 
