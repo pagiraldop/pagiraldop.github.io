@@ -1,12 +1,12 @@
-name: "my-website"
+name: "Paula Andrea Giraldo P"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Proyecto Semillero"
   left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+  - text: "Sobre mi"
+    href: index.html
+  - text: "Trabajos"
+    href: about.html
 output:
   html_document:
     theme: flatly
